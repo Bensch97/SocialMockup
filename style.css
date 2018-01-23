@@ -51,6 +51,7 @@ li {
     list-style-type: none;
     margin-right: 20px;
 }
+
 details {display: inline;}
 
 body {
@@ -127,5 +128,9 @@ figcaption {
 
 .col-header p {padding: .5em .4em;}
 
+#location-info {border-bottom: 1px solid silver;}
+
 #location-info p {font-size: .9em;}
+
+#phone-number p {color: blue;}
 
