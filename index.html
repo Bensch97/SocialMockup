@@ -8,58 +8,7 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <style>
-      #header-info {
-          background-color: blue;
-          width: 850px;
-          height: 400px;
-          margin: 0 auto;
-      }
-      #fake-figure {
-          width: 300px;
-          position: absolute;
-          top: 260px;
-      }
-      #fake-image {
-          width: 175px;
-          height: 175px;
-          border: 1px solid black;
-          float: left;
-          background-color: blue;
-      }
-      #fake-figcaption {
-          float: right;
-          width: 100px;
-          position: relative;
-          top: 30px;
-          color: white;
-      }
-      #buttons {
-        position: relative;
-        left: 70%;
-        top: 365px;
-}
-      nav {
-          width: 850px;
-          height: 50px;
-          margin: 0 auto;
-          border: 1px solid lightgrey;
-      }
-      ul {
-        position: relative;
-        width: 50%;
-        left: 163px;
-      }
-      li {
-        display: inline;
-        list-style-type: none;
-        margin-right: 20px;
-      }
-      details {
-          display: inline;
-      }
-      
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -92,7 +41,7 @@
                 <li>Welcome</li>
                 <li>FWB</li>
                 <li>
-                    <details>
+                    <details> <!-- This is wrong -->
                         <summary>More</summary>
                         <p><a href="#">Link 1</a></p>
                     </details>
@@ -102,6 +51,54 @@
 
     </header>
 
-  <script src="js/scripts.js"></script>
+    <main>
+        <div id="content">
+            
+            <div id="left-col">
+
+                <div class="left-col-row">
+                    <h4>About Your Page</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div class="left-col-row">
+                    <div class="col-header">
+                        <p>About</p>
+                    </div>
+                    <div id="location-info">
+                        <p>Your Address</p>
+                        <p>City, Country</p>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+            <div id="right-col">
+                
+                <div class="new-post">
+                    <div class="post-info">
+                        <figure>
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="50px" height="50px" alt="" />
+                            <figcaption>
+                                <p><strong>Colin</strong> changed their cover photo.</p>
+                                <p>3 minutes ago.</p>
+                            </figcaption>
+                        </figure>
+                        <div class="fake-image"></div>
+                        <div class="user-options">
+                            <p>Like</p> &#0149
+                            <p>Comment</p> &#0149
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+    </main>
+        
 </body>
 </html>
